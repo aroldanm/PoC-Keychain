@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5JR-I6-IUo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -98,6 +98,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--New Try View Controller-->
+        <scene sceneID="mP5-nd-UfP">
+            <objects>
+                <viewController id="5JR-I6-IUo" customClass="NewTryViewController" customModule="EncryptPassDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sig-fj-dXY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xCI-up-Vfn">
+                                <rect key="frame" x="10" y="110" width="396" height="573"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN2-9c-sk7">
+                                <rect key="frame" x="0.0" y="693" width="414" height="45"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zG5-9i-nMn"/>
+                                </constraints>
+                                <state key="normal" title="Guardar Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePassword" destination="5JR-I6-IUo" eventType="touchUpInside" id="FAR-CM-lgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-Tu-cUO">
+                                <rect key="frame" x="0.0" y="748" width="414" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="oWI-TL-NiV"/>
+                                </constraints>
+                                <state key="normal" title="Recuperar Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassword" destination="5JR-I6-IUo" eventType="touchUpInside" id="JA8-ah-hCd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-yi-6ae">
+                                <rect key="frame" x="0.0" y="803" width="414" height="45"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="J97-jd-L01"/>
+                                </constraints>
+                                <state key="normal" title="Eliminar Password Registrando">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteSecureEnclaveKey" destination="5JR-I6-IUo" eventType="touchUpInside" id="cbU-hU-RrO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ4-ae-7r5">
+                                <rect key="frame" x="15" y="69" width="384" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dvL-ea-XXL" firstAttribute="trailing" secondItem="zZ4-ae-7r5" secondAttribute="trailing" constant="15" id="6SS-gt-eeQ"/>
+                            <constraint firstItem="BQ8-Tu-cUO" firstAttribute="top" secondItem="AN2-9c-sk7" secondAttribute="bottom" constant="10" id="Dhc-nB-9eC"/>
+                            <constraint firstItem="dvL-ea-XXL" firstAttribute="bottom" secondItem="Rus-yi-6ae" secondAttribute="bottom" constant="14" id="Kgp-P5-6kh"/>
+                            <constraint firstItem="AN2-9c-sk7" firstAttribute="top" secondItem="xCI-up-Vfn" secondAttribute="bottom" constant="10" id="NoH-Ov-jZh"/>
+                            <constraint firstItem="Rus-yi-6ae" firstAttribute="trailing" secondItem="dvL-ea-XXL" secondAttribute="trailing" id="Sxg-pJ-pg2"/>
+                            <constraint firstItem="Rus-yi-6ae" firstAttribute="top" secondItem="BQ8-Tu-cUO" secondAttribute="bottom" constant="10" id="WZx-vA-wDU"/>
+                            <constraint firstItem="BQ8-Tu-cUO" firstAttribute="leading" secondItem="dvL-ea-XXL" secondAttribute="leading" id="YhM-Xf-rzN"/>
+                            <constraint firstItem="dvL-ea-XXL" firstAttribute="trailing" secondItem="xCI-up-Vfn" secondAttribute="trailing" constant="8" id="c7I-W4-A2f"/>
+                            <constraint firstItem="dvL-ea-XXL" firstAttribute="trailing" secondItem="BQ8-Tu-cUO" secondAttribute="trailing" id="dx6-so-aPg"/>
+                            <constraint firstItem="zZ4-ae-7r5" firstAttribute="top" secondItem="dvL-ea-XXL" secondAttribute="top" constant="25" id="fNu-ri-w8s"/>
+                            <constraint firstItem="xCI-up-Vfn" firstAttribute="leading" secondItem="dvL-ea-XXL" secondAttribute="leading" constant="10" id="gPR-Cz-4C1"/>
+                            <constraint firstItem="zZ4-ae-7r5" firstAttribute="leading" secondItem="dvL-ea-XXL" secondAttribute="leading" constant="15" id="hMJ-G9-VSk"/>
+                            <constraint firstItem="AN2-9c-sk7" firstAttribute="leading" secondItem="dvL-ea-XXL" secondAttribute="leading" id="nHw-Io-l86"/>
+                            <constraint firstItem="Rus-yi-6ae" firstAttribute="leading" secondItem="dvL-ea-XXL" secondAttribute="leading" id="nj9-tO-bmC"/>
+                            <constraint firstItem="dvL-ea-XXL" firstAttribute="trailing" secondItem="AN2-9c-sk7" secondAttribute="trailing" id="oKt-SG-RDf"/>
+                            <constraint firstItem="xCI-up-Vfn" firstAttribute="top" secondItem="zZ4-ae-7r5" secondAttribute="bottom" id="t2N-NE-Re1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvL-ea-XXL"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="zZ4-ae-7r5" id="12c-8V-OdH"/>
+                        <outlet property="textView" destination="xCI-up-Vfn" id="INO-Sa-kMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcq-iE-Onf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="130"/>
         </scene>
     </scenes>
 </document>

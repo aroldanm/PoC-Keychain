@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14E0442247018CB00C32AF2 /* NewTryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E0441247018CB00C32AF2 /* NewTryViewController.swift */; };
 		D843E6EE246E8C100045A5F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843E6ED246E8C100045A5F6 /* AppDelegate.swift */; };
 		D843E6F0246E8C100045A5F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843E6EF246E8C100045A5F6 /* SceneDelegate.swift */; };
 		D843E6F2246E8C100045A5F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843E6F1246E8C100045A5F6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D14E0441247018CB00C32AF2 /* NewTryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTryViewController.swift; sourceTree = "<group>"; };
 		D843E6EA246E8C100045A5F6 /* EncryptPassDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptPassDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D843E6ED246E8C100045A5F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D843E6EF246E8C100045A5F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D843E6ED246E8C100045A5F6 /* AppDelegate.swift */,
 				D843E6EF246E8C100045A5F6 /* SceneDelegate.swift */,
 				D843E6F1246E8C100045A5F6 /* ViewController.swift */,
+				D14E0441247018CB00C32AF2 /* NewTryViewController.swift */,
 				D843E6F3246E8C100045A5F6 /* Main.storyboard */,
 				D843E6F6246E8C120045A5F6 /* Assets.xcassets */,
 				D843E6F8246E8C120045A5F6 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D843E6F2246E8C100045A5F6 /* ViewController.swift in Sources */,
+				D14E0442247018CB00C32AF2 /* NewTryViewController.swift in Sources */,
 				D843E6EE246E8C100045A5F6 /* AppDelegate.swift in Sources */,
 				D843E6F0246E8C100045A5F6 /* SceneDelegate.swift in Sources */,
 			);
